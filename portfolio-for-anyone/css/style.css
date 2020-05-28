@@ -1,0 +1,241 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #232020;
+}
+.navbar {
+    margin-top: 0px;
+    height: 10%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 30px 0%;
+    background-color: #f4f4f4;
+}
+.nav-home {
+    font-weight: 600;
+    font-size: larger;
+    transition-delay: 0.2ms;
+}
+.nav-home:active {
+    color: #ff7315;
+}
+.btn {
+    border: 3px solid #ff7315;
+    border-radius: 5px;
+    background-color: white;
+    color: #ff7315;
+    padding: 10px 15px;
+}
+.btn:hover {
+    background-color: #ff7315;
+    color: white;
+}
+.btn-dark {
+    background-color: #3a3535;
+    margin: 10px 10px;
+}
+.nav-contact a {
+    color: #ff7315;
+}
+.container1 {
+    width: 100%;
+    height: 90%;
+}
+
+.title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #ff7315;
+    padding: 30px 0px;
+}
+.t1 {
+    font-size: 3em;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.t2 {
+    font-size: 2em;
+}
+.coverImg {
+    height: 35%;
+    width: 50%;
+}
+.container {
+    background-color: white;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    color: #3a3535;
+    padding: 3% 0%;
+}
+.about-img {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.child-c2 {
+    padding: 3% 5%;
+}
+.c2-img {
+    height: 100px;
+    width: 100px;
+    padding: 10px 20px;
+}
+#about-text {
+    background-color: #f4f4f4;
+    border-radius: 200px 0px 0px 200px;
+    border-right: none;
+}
+h4 {
+    font-size: 1.5em;
+    color: #ff7315;
+}
+#about-text div {
+    padding-top: 25px;
+}
+#htmlImg {
+    padding: 5% 0%;
+}
+#skills-text {
+    background-color: #f4f4f4;
+    border-left: none;
+    border-radius: 0px 200px 200px 0px;
+    padding: 5% 5%;
+    margin-right: 10%;
+}
+#call-to-action {
+    background-color: #3a3535;
+    padding: 4% 4% 8% 4%;
+}
+.cta-text {
+    margin: 3% 0%;
+    font-size: 1.8em;
+    color: #ff7315;
+}
+.projects {
+    display: inline-flex;
+    align-items: center;
+    padding: 5% 0%;
+    justify-content: space-around;
+    background-color: #f4f4f4;
+}
+.projects-child {
+    width: 23%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+.projects-child:hover {
+    box-shadow: -3px -3px 15px #ff7315, 3px 3px 15px #ff7315;
+    transition: 0.3s all ease-in;
+    transform: scale(1.05);
+}
+.footer {
+    height: 20%;
+    width: 100%;
+    margin: 0;
+    background-color: #232020;
+    color: white;
+    padding: 5% 0%;
+}
+.f1-img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px;
+}
+.git-img {
+    margin: 0px 20px;
+}
+.footer-link {
+    color: white;
+    font-size: 1.4em;
+}
+
+/*Scroll-animation CSS*/
+.text-disappear1 {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: 0.8s all ease-in-out;
+    transition-delay: 0.8s;
+}
+.text-disappear2 {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: 0.8s all ease-in-out;
+}
+.text-disappear3 {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: 0.8s all ease-in-out;
+    transition-delay: 1.6s;
+}
+.text-appear {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+
+
+/*MObile-Responsive code*/
+@media (max-width: 900px) {
+    .t1 {
+        padding: 50px 20px 10px 20px;
+        font-size: 1.8em;
+    }
+    .t2 {
+        font-size: 1.2em;
+    }
+    .coverImg {
+        height: 60%;
+        width: 75%;
+    }
+    .container {
+        flex-wrap: wrap-reverse;
+    }
+    .c2-img {
+        height: 60px;
+        width: 60px;
+        padding: 10px 20px;
+    }
+    .projects {
+        flex-wrap: wrap;
+    }
+    .projects-child {
+        width: 60%;
+        height: 70%;
+        margin: 5% 0%;
+        font-size: 0.8em;
+    }
+    .cta-text {
+        font-size: 1.4em;
+    }
+    .f1-img {
+        height: 40px;
+        width: 40px;
+    }
+    #call-to-action {
+        padding-bottom: 10%;
+    }
+    #about-text {
+        margin-left: 4%;
+        padding: 8% 8%;
+        font-size: 0.8em;
+    }
+    #htmlImg {
+        padding: 5% 5%;
+    }
+    #skills-text {
+        margin-right: 5%;
+        padding: 5% 10% 5% 10%;
+        font-size: 0.8em;
+    }
+
+}
